@@ -1,0 +1,14 @@
+{
+  "features": [
+    "T",
+    "ln P_HF",
+    "ln P_TMA",
+    "ln P_total",
+    "ln tau_scale"
+  ],
+  "best_model": {
+    "log_cycle": "GP",
+    "EPC": "HistGB"
+  },
+  "usage": "X = [T, ln P_HF, ln P_TMA, ln P_total, ln tau_scale]; cycle = exp(m_log_cycle.predict(X)); EPC = m_EPC.predict(X)"
+}
